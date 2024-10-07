@@ -1,10 +1,10 @@
 from django.db import models
-
+from ckeditor.fields import RichTextField
 # Create your models here.
 
 class Project(models.Model):
     title= models.CharField(max_length=200, verbose_name="Titulo")
-    description= models.TextField(null=True, blank=True, verbose_name="Descripcion")
+    description= RichTextField(null=True, blank=True, verbose_name="Descripcion")
     image= models.ImageField(default='No image provided', verbose_name="Imagen", upload_to="projects")
     link= models.URLField(verbose_name= "Direccion web",null=True, blank=True)
     created= models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creacion")
