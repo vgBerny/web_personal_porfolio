@@ -89,6 +89,16 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
+                {% if LINK_LINKEDIN %}
+                <a href="{{LINK_LINKEDIN}}" class="link">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              {% endif %}
+              <li class="list-inline-item">
                 {% if LINK_GMAIL %}
                 <a href="{{LINK_GMAIL}}" class="link">
                   <span class="fa-stack fa-lg">
