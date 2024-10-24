@@ -1,5 +1,5 @@
 ## Description
-Personal website and portfolio, made with Django, Python, HTML and CSS.
+Personal website and portfolio, made with Django, Python, HTML and JavaScript.
 
 ## Author
 **Berny Valverde G.**
