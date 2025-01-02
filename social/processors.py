@@ -1,7 +1,5 @@
 from .models import Link
 
-from .models import Link
-
 def ctx_dict(request):
     ctx = {}
     links = Link.objects.all()

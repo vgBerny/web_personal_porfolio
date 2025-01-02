@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as core_views 
-from portfolio import views as portfolio_views 
+from portfolio import views as portfolio_views
+from django.urls import path
+from social import views as social_views 
 
 from django.conf import settings
 
@@ -27,6 +29,7 @@ urlpatterns = [
     path('contact/', core_views.contact, name="contact"),
     path('portfolio/', portfolio_views.portfolio, name="portfolio"),
     path('admin/', admin.site.urls),
+    path('descargar-pdf/', social_views.descargar_pdf, name='descargar_pdf'),
 ]
 
 if settings.DEBUG:
